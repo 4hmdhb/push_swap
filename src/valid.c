@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   valid.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsanta <vsanta@student.42.fr>              +#+  +:+       +#+        */
+/*   By: basylbek <basylbek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 15:09:41 by vsanta            #+#    #+#             */
-/*   Updated: 2019/07/19 13:57:14 by vsanta           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:38:56 by basylbek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_push_swap.h"
 
-int	ft_ps_is_valid_int(int val_i, char *val_c)
+int	is_valid_int(int val_i, char *val_c)
 {
 	char	*cur_val;
 	int		res;
@@ -26,7 +26,7 @@ int	ft_ps_is_valid_int(int val_i, char *val_c)
 	return (res);
 }
 
-int	ft_ps_is_not_dupl(t_stack *st, int val)
+int	is_not_dupl(t_stack *st, int val)
 {
 	while (st)
 	{
@@ -37,7 +37,7 @@ int	ft_ps_is_not_dupl(t_stack *st, int val)
 	return (1);
 }
 
-int	ft_ps_is_sort_stacks(t_stacks *sts)
+int	is_sort_stacks(t_stacks *sts)
 {
 	t_stack	*st_a;
 	int		last_val;

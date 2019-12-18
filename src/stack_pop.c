@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   stack_pop.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsanta <vsanta@student.42.fr>              +#+  +:+       +#+        */
+/*   By: basylbek <basylbek@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 15:02:06 by vsanta            #+#    #+#             */
-/*   Updated: 2019/07/19 13:55:54 by vsanta           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:16:03 by basylbek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_push_swap.h"
 
-t_stack			*ft_ps_stack_pop_front(t_stack **stack)
+t_stack			*stack_pop_front(t_stack **stack)
 {
 	t_stack *tmp;
 
@@ -27,7 +27,7 @@ t_stack			*ft_ps_stack_pop_front(t_stack **stack)
 	return (tmp);
 }
 
-t_stack			*ft_ps_stack_pop_back(t_stack **stack)
+t_stack			*stack_pop_back(t_stack **stack)
 {
 	t_stack *pre_last;
 	t_stack *tmp;
